@@ -32,8 +32,10 @@ h4 {
     font-size: 1.275rem;
     color: var(--bs-emphasis-color);
 }
+p {
+    font-size: 12px;
+}
 /* layout for admin dashboard skeleton */
-
 .wrapper {
     align-items: stretch;
     display: flex;
@@ -209,18 +211,18 @@ a.sidebar-link{
 
  }
 
- html[data-bs-theme="dark"] .theme-toggle .fa-sun,
- html[data-bs-theme="light"] .theme-toggle .fa-moon {
+ html[data-bs-theme="dark"] .theme-toggle .bi-sun,
+ html[data-bs-theme="light"] .theme-toggle .bi-moon {
     cursor: pointer;
     display: block;
-    font-size: 1.25rem;
+    /* font-size: 1.5rem; */
     
  }
 
- html[data-bs-theme="dark"] .theme-toggle .fa-moon {
+ html[data-bs-theme="dark"] .theme-toggle .bi-moon {
     display: none;
  }
- html[data-bs-theme="light"] .theme-toggle .fa-sun {
+ html[data-bs-theme="light"] .theme-toggle .bi-sun {
     display: none;
  }
 
