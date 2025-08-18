@@ -146,6 +146,10 @@ a.sidebar-link{
     border-left: .3em solid transparent;
 }
 
+.dropdown-link{
+    font-size: .850rem;
+}
+
 .profile-dropdown-toggle::after{
     display: inline-block;
     margin-left: .3rem;
@@ -177,17 +181,10 @@ a.sidebar-link{
     margin-bottom: 24px;
 }
 
-.illustration {
-    background-color: var(--bs-primary-bg-subtle);
-    color: var(--bs-emphasis-color);
+
+.card-bottom-titile{
+    font-size: 10.5px;
 }
-
-.illustration-img{
-    max-width: 150px;
-    width: 100%;
-}
-
-
 
 /* footer and nav  */
  @media (max-width:767.98px){

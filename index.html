@@ -127,18 +127,13 @@
                                 <div class="modal-dialog modal-sm">
                                     <div class="modal-content">
                                         <div class="modal-body">
-                                            <!-- <div class="border-1 flex-grow-1">
-                                                <input type="text" name="search" placeholder="Search" class="flex-grow-1 w-100">
-                                                <span><i class="fa-solid fa-search"></i></span>
-                                            </div> -->
                                             <form>
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control border-primary" placeholder="Recipient’s username" aria-label="Recipient’s username" aria-describedby="basic-addon2">
-                                                    <button class="input-group-text bg-primary" id="basic-addon2"><i class="fa-solid fa-search text-white"></i></button>
+                                                    <input type="text" class="form-control border-primary" placeholder="Recipient’s username" aria-label="Search here" aria-describedby="basic-addon2">
+                                                    <button type="submit" class="input-group-text bg-primary" id="basic-addon2"><i class="fa-solid fa-search text-white"></i></button>
                                                  </div>
                                             </form>
                                         </div>
-                                    
                                     </div>
                                 </div>
                             </div>
@@ -149,18 +144,17 @@
                                     <i class="fa-solid fa-bell me-2"></i>
                                     <span class="position-absolute top-50 start-100 translate-middle badge rounded bg-danger">
                                         3
-                                        <span class="visually-hidden">unread messages</span>
                                     </span>
                                 </button>
                             </a>
-                            <div class="dropdown-menu pt-0 dropdown-menu-start">
+                            <div class="dropdown-menu py-0 dropdown-menu-start">
                                 <ul class="p-0">
-                                    <li class="dropdown-item dropdown-header bg-primary text-light">Notifications</li>
-                                    <li><a href="#" class="dropdown-item">Profile Profile</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a href="#" class="dropdown-item">Setting</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a href="#" class="dropdown-item">Logout</a></li>
+                                    <li class="dropdown-item dropdown-link dropdown-header bg-primary text-light">Notifications</li>
+                                    <li><a href="#" class="dropdown-item dropdown-link text-muted">Profile Profile</a></li>
+                                    <li><hr class="dropdown-divider my-0"></li>
+                                    <li><a href="#" class="dropdown-item dropdown-link text-muted">Setting</a></li>
+                                    <li><hr class="dropdown-divider my-0"></li>
+                                    <li><a href="#" class="dropdown-item dropdown-link text-muted">Logout</a></li>
                                     
                                 </ul>
                             </div>
@@ -171,18 +165,17 @@
                                     <i class="fa-solid fa-envelope me-2"></i>
                                     <span class="position-absolute top-50 start-100 translate-middle badge rounded bg-danger">
                                         9+
-                                        <span class="visually-hidden">unread messages</span>
                                     </span>
                                 </button>
                             </a>
-                            <div class="dropdown-menu pt-0 dropdown-menu-end">
+                            <div class="dropdown-menu py-0 dropdown-menu-end">
                                 <ul class="p-0">
-                                    <li class="dropdown-item dropdown-header bg-primary text-light">Message Center</li>
-                                    <li><a href="#" class="dropdown-item">Profile Profile Profile Profile</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a href="#" class="dropdown-item">Setting</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a href="#" class="dropdown-item">Logout</a></li>
+                                    <li class="dropdown-item dropdown-link dropdown-header bg-primary text-light">Message Center</li>
+                                    <li><a href="#" class="dropdown-item dropdown-link text-muted">Profile Profile Profile Profile</a></li>
+                                    <li><hr class="dropdown-divider my-0"></li>
+                                    <li><a href="#" class="dropdown-item dropdown-link text-muted">Setting</a></li>
+                                    <li><hr class="dropdown-divider my-0"></li>
+                                    <li><a href="#" class="dropdown-item dropdown-link text-muted">Logout</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -190,14 +183,14 @@
                             <a href="#" data-bs-toggle="dropdown" class="nav-icon profile-dropdown-toggle text-muted pe-md-0">
                                 <img src="image/profile.jpg" class="avatar img-fluid rounded-pill" alt="">
                             </a>
-                            <div class="dropdown-menu dropdown-menu-end pt-0">
+                            <div class="dropdown-menu dropdown-menu-end py-0">
                                 <ul class="p-0">
-                                    <li class="dropdown-item dropdown-header bg-primary text-light">Notifications</li>
-                                    <li><a href="#" class="dropdown-item">Profile Profile Profile Profile</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a href="#" class="dropdown-item">Setting</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a href="#" class="dropdown-item">Logout</a></li>
+                                    <li class="dropdown-item dropdown-link dropdown-header bg-primary text-light">Notifications</li>
+                                    <li><a href="#" class="dropdown-item dropdown-link text-muted"><span><i class="fa-solid fa-user text-body-tertiary me-2"></i></span>Profile</a></li>
+                                    <li><hr class="dropdown-divider my-0"></li>
+                                    <li><a href="#" class="dropdown-item dropdown-link text-muted"><span><i class="fa-solid fa-gear text-body-tertiary me-2"></i></span>Setting</a></li>
+                                    <li><hr class="dropdown-divider my-0"></li>
+                                    <li><a href="#" class="dropdown-item dropdown-link text-muted"><span><i class="fa-solid fa-arrow-right-from-bracket me-2"></i></span>Logout</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -225,7 +218,7 @@
                                                 <span class="badge text-success me-2">
                                                     +9.0%
                                                 </span>
-                                                <span class="text-muted">
+                                                <span class="text-muted card-bottom-titile">
                                                     Since Last Month
                                                 </span>
                                             </div>
@@ -252,7 +245,7 @@
                                                 <span class="badge text-success me-2">
                                                     +9.0%
                                                 </span>
-                                                <span class="text-muted">
+                                                <span class="text-muted card-bottom-titile">
                                                     Since Last Years
                                                 </span>
                                             </div>
@@ -279,7 +272,7 @@
                                                 <span class="badge text-success me-2">
                                                     +9.0%
                                                 </span>
-                                                <span class="text-muted">
+                                                <span class="text-muted card-bottom-titile">
                                                     Since Last Month
                                                 </span>
                                             </div>
@@ -306,7 +299,7 @@
                                                 <span class="badge text-success me-2">
                                                     +9.0%
                                                 </span>
-                                                <span class="text-muted">
+                                                <span class="text-muted card-bottom-titile">
                                                     Since Yesterdays
                                                 </span>
                                             </div>
@@ -322,16 +315,6 @@
                     <!-- chart start here  -->
                     <div class="row">
                         <div class="col-12 col-md-7">
-                            <!-- <div class="card shadow border-0 flex-fill">
-                                 <div class="card-header ">
-                                    <h5 class="card-title">
-                                        Monthly Overview
-                                    </h5>
-                                </div>
-                                <div class="p-3">
-                                        <canvas id="myChart"></canvas>
-                                </div>
-                            </div> -->
                             <div class="card shadow flex-fill border-0">
                                 <div class="card-header">
                                     <h5 class="card-title">
@@ -458,33 +441,33 @@
         data: {
             labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
             datasets: [{
-            label: 'Sales',
-            data: [12, 7, 15, 6, 10],
-            backgroundColor: ['#0d6efd', '#198754', '#ffc107', '#dc3545', '#FFFFFF'], // custom colors
-            borderWidth: 1,
-            borderColor: '#333',
-            // borderRadius: 6 // rounded bars
+                label: 'Sales',
+                data: [12, 7, 15, 6, 10],
+                backgroundColor: ['#0d6efd', '#198754', '#ffc107', '#dc3545', '#FFFFFF'], // custom colors
+                borderWidth: 1,
+                borderColor: '#333',
+                // borderRadius: 6 // rounded bars
             }]
         },
         options: {
             responsive: true,
             plugins: {
-            legend: {
-                display: true,
-                position: 'bottom', // top, left, right, bottom
-                labels: {
-                // color: '#555',
-                font: { size: 14, weight: 'bold' }
+                legend: {
+                    display: true,
+                    position: 'bottom', // top, left, right, bottom
+                    labels: {
+                    // color: '#555',
+                    font: { size: 14, weight: 'bold' }
+                    }
+                },
+                tooltip: {
+                    enabled: true,
+                    callbacks: {
+                    label: function(context) {
+                        return '💰 $' + context.raw; // custom tooltip text
+                    }
+                    }
                 }
-            },
-            tooltip: {
-                enabled: true,
-                callbacks: {
-                label: function(context) {
-                    return '💰 $' + context.raw; // custom tooltip text
-                }
-                }
-            }
             },
             scales: {
             y: {
@@ -515,16 +498,11 @@
             }]
             },
             options: {
-                plugins: {
-                    datalabels: {
-                    display: false
+                scales: {
+                    y: {
+                    beginAtZero: true
                     }
-                },
-            scales: {
-                y: {
-                beginAtZero: true
                 }
-            }
             }
         });
     </script>
