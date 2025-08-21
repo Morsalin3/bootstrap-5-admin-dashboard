@@ -116,9 +116,9 @@ a.sidebar-link{
 
 /* sidebar toggle  */
 
-#sidebar.collapsed{
-    margin-left: -264px;
-}
+    #sidebar.collapsed{
+        margin-left: -264px;
+    }
 
 /* navbar start here  */
 
