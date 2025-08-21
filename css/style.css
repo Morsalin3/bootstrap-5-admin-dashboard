@@ -150,6 +150,10 @@ a.sidebar-link{
     font-size: .850rem;
 }
 
+.profile-dropdown-toggle{
+    white-space: nowrap;
+}
+
 .profile-dropdown-toggle::after{
     display: inline-block;
     margin-left: .3rem;
