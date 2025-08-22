@@ -235,19 +235,15 @@
                         </div>
                         <div class="card-body ">
                               <!-- Add Dealer Button -->
-                            <div class="mb-3">
-                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModal">
-                                    + Add Dealer
-                                </button>
-                            </div>
+                           
 
 
                             <!-- Search Filters -->
-                            <form class="row g-3 mb-4" id="filterForm">
-                                <div class="col-md-3">
+                            <form class="row g-3 mb-4 d-flex flex-wrap" id="filterForm">
+                                <div class="col-md-3 col-lg-2 col-xxl-3">
                                 <input type="text" id="dealerName" class="form-control" placeholder="Dealer Name">
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-3 col-lg-2">
                                 <select id="method" class="form-select">
                                     <option value="">Select Method</option>
                                     <option>Cash</option>
@@ -255,7 +251,7 @@
                                     <option>Online</option>
                                 </select>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-3 col-lg-2">
                                 <select id="category" class="form-select">
                                     <option value="">Select Category</option>
                                     <option>Electronics</option>
@@ -263,17 +259,37 @@
                                     <option>Clothing</option>
                                 </select>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-3 col-lg-2">
                                 <input type="date" id="fromDate" class="form-control">
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-3 col-lg-2">
                                 <input type="date" id="toDate" class="form-control">
                                 </div>
-                                <div class="col-md-1 d-grid">
-                                <button type="button" id="filterBtn" class="btn btn-primary">Search</button>
+                                <div class="col-sm-1">
+                                    <button type="button" id="resetBtn" class="btn btn-warning text-nowrap">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                            <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                                            <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                                            </svg>
+                                        </span>
+                                        <span>Reset</span>
+                                    </button>
                                 </div>
-                                <div class="col-md-1 d-grid">
-                                <button type="button" id="resetBtn" class="btn btn-secondary">Reset</button>
+                                <div class="col-sm-1">
+                                    <button type="button" id="filterBtn" class="btn btn-primary">
+                                        Search
+                                    </button>
+                                </div>
+                                <div class="col-sm-1 text-nowrap">
+                                    <button class="btn text-white bg-dark" data-bs-toggle="modal" data-bs-target="#addModal">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                            </svg>
+                                        </span>
+                                        Create
+                                    </button>
                                 </div>
                             </form>
 
