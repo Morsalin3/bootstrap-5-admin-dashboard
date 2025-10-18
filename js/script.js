@@ -30,3 +30,40 @@ function isLight(){
 if(isLight()){
     toggleRootClass()
 }
+
+
+// for navbar dropdown option 
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const userIcons = document.querySelectorAll(".user-icon");
+
+        // Function to close all menus
+        function closeAllMenus() {
+            document.querySelectorAll(".submenu").forEach(menu => menu.classList.remove("show"));
+        }
+
+        userIcons.forEach(icon => {
+            const toggle = icon.querySelector("a[id$='Toggle']"); // targets IDs like notificationToggle, mailToggle, userToggle
+            const submenu = icon.querySelector(".submenu");
+
+            // When clicking the toggle
+            toggle.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Close others first
+            document.querySelectorAll(".submenu").forEach(menu => {
+                if (menu !== submenu) menu.classList.remove("show");
+            });
+
+            // Toggle this one
+            submenu.classList.toggle("show");
+            });
+
+            // Prevent clicks inside submenu from closing it
+            submenu.addEventListener("click", (e) => e.stopPropagation());
+        });
+
+        // Clicking outside closes all
+        document.addEventListener("click", closeAllMenus);
+        });
